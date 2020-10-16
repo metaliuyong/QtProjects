@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -7,6 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     QWidget::setWindowFlag(Qt::FramelessWindowHint);
+    qDebug() << "Hello Git";
 }
 
 MainWindow::~MainWindow()
